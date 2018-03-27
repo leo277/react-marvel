@@ -28,12 +28,15 @@ Set Up Process (for self learning)
 	on produciton, the whole application will be minified into bundle.js.
 	then create a folder called app,
 	Inside app, create index.js for app entry point.
-	
+	Create components folder, to store all the components
+	Use camel case to name component. eg: Home.js
+
 4. create file called webpack.config.js
 	This file is used for configuring webpack for bundling assets for dev and production
 	for this project, we will compile all assets from "src" folder into "dist" folder
 	all javascript(ES6 or vanilla) will be compiled into a single file called "bundle.js" for production server use
 	include module for bundling ES6 codes
+
 5. create compiling script inside package.json
 	
 	webpack -d : bundle the app for dev
@@ -53,4 +56,24 @@ Project will then run on port 3000
 On production, setup a node/nginx server to serve the static files.
 
 
+
+
+REACT NOTES:
+1. Passing values in react
+-pass by props
+using prop-types to define the prop typing
+
+
+-pass by children 
+any tag inside a component tag is children
+eg: <Home>
+		<div>
+		</div>
+	</Home>
+then get children inside the Home component by
+	{props.children}
+2. Event handling
+  generally, use 'on' followed by the event
+  eg: to register a click , use onClick
+  
 
