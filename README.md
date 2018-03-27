@@ -46,5 +46,11 @@ Set Up Process (for self learning)
 		--hot : for reloading realtime
 
 
+To start the app on dev:
+run:  npm start
+Project will then run on port 3000
+
+On production, setup a node/nginx server to serve the static files.
+
 
 
