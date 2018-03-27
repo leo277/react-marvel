@@ -55,14 +55,18 @@ Project will then run on port 3000
 
 On production, setup a node/nginx server to serve the static files.
 
-
-
-
 REACT NOTES:
 1. Passing values in react
 -pass by props
 using prop-types to define the prop typing
-
+Set the defaultProps property so that it wont run into error if no props are present
+eg: 
+MyComponent.defaultProps = {
+	propName: "default value"
+}
+MyComponent.propTypes = {
+	propName: PropTypes.string
+}
 
 -pass by children 
 any tag inside a component tag is children
@@ -75,5 +79,5 @@ then get children inside the Home component by
 2. Event handling
   generally, use 'on' followed by the event
   eg: to register a click , use onClick
-  
+
 
