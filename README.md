@@ -6,6 +6,11 @@ BABEL(dev): for transpiling ES6 to ES5
 npm for package manager
 
 
+Other libraries:
+-material-ui : see link
+https://material-ui-next.com/getting-started/installation/
+also include font and icon cdn for the material fonts and svg icons
+
 Set Up Process (for self learning)
 1. run npm init to start a new project
 2. install dependencies with npm
