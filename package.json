@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build-dev",
     "build-dev": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --hot --mode development --port 3000",
-    "build-prod": "mkdir -p dist/app/styles && webpack -p && cp src/index.html dist/index.html && cp src/app/styles/app.css dist/app/styles/app.css"
+    "build-prod": "mkdir -p dist/app/styles && mkdir -p dist/app/images && webpack -p && cp src/index.html dist/index.html && cp src/app/styles/app.css dist/app/styles/app.css && cp -a src/app/images/* dist/app/images"
   },
   "repository": {
     "type": "git",
